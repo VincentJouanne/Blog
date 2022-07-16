@@ -45,15 +45,6 @@ export default function AuthorLayout({ children, frontMatter }) {
           </div>
           {/* <div className="pt-8 pb-8 prose dark:prose-dark max-w-none xl:col-span-2">{children}</div> */}
           <div className="pt-8 pb-8 prose dark:prose-dark max-w-none xl:col-span-2">
-            <p>{text1}</p>
-            <span>Are you interested in what I'm doing </span>
-            <Link
-              href={'/now'}
-              className="special-underline hover:dark:text-gray-800 dark:text-gray-100 no-underline"
-            >
-              now{' '}
-            </Link>
-            <br />
             <p>
               <RoughNotation
                 type="bracket"
@@ -61,31 +52,19 @@ export default function AuthorLayout({ children, frontMatter }) {
                 show={true}
                 color="#FF0000"
               >
-                {text2}
+                {text1}
               </RoughNotation>
             </p>
-            <br />
-            <p>
-              {text3} <br />
-              <Link
-                href={'/uses'}
-                className="special-underline no-underline hover:dark:text-gray-800 dark:text-gray-100"
-              >
-                Here{' '}
-              </Link>
-              you can see what I use on daily basis.
-            </p>
-            <br />
             <p>
               Feel free to reach out if you have anything to talk about, you can reach me on{' '}
-              <RoughNotation type="highlight" show={true} color="#FBCFE8" animationDelay={1200}>
-                <span className="dark:text-gray-700">einargudnig@gmail.com </span>
+              <RoughNotation type="highlight" show={true} color="#FFFFFF" animationDelay={500}>
+                <span className="dark:text-gray-700">jouanne.vincent@gmail.com </span>
               </RoughNotation>
               or on social media.
             </p>
           </div>
         </div>
-        <div className="mt-10">
+        {/* <div className="mt-10">
           <div className="pt-6 pb-8 space-y-2 md:space-y-5">
             <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
               Experience
@@ -106,7 +85,7 @@ export default function AuthorLayout({ children, frontMatter }) {
               />
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   )
