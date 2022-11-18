@@ -1,9 +1,5 @@
-import SocialIcon from '@/components/social-icons'
 import Image from '@/components/Image'
-import Link from '@/components/Link'
 import { PageSEO } from '@/components/SEO'
-import Experience from '@/components/Experience'
-import experienceData from '@/data/experienceData'
 import { RoughNotation } from 'react-rough-notation'
 
 export default function AuthorLayout({ children, frontMatter }) {
@@ -56,11 +52,8 @@ export default function AuthorLayout({ children, frontMatter }) {
               </RoughNotation>
             </p>
             <p>
-              Feel free to reach out if you have anything to talk about, you can reach me on{' '}
-              <RoughNotation type="highlight" show={true} color="#FFFFFF" animationDelay={500}>
-                <span className="dark:text-gray-700">jouanne.vincent@gmail.com </span>
-              </RoughNotation>
-              or on social media.
+              Feel free to reach out if you have anything to talk about ! you can reach me on social
+              media.
             </p>
           </div>
         </div>

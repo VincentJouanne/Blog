@@ -1,14 +1,12 @@
+import Image from '@/components/Image'
 import Link from '@/components/Link'
 import { PageSEO } from '@/components/SEO'
+import ShortcutHome from '@/components/ShortcutHome'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
 import { RoughNotation } from 'react-rough-notation'
-import Image from '@/components/Image'
-import ShortcutHome from '@/components/ShortcutHome'
-
-import NewsletterForm from '@/components/NewsletterForm'
 
 const MAX_DISPLAY = 3
 
@@ -27,54 +25,54 @@ export default function Home({ posts }) {
           <div className="flex items-center justify-between">
             <div className="">
               <h1 className="mb-2 text-2xl font-extrabold tracking-tight leading-11 text-slate-900 dark:text-slate-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-                I'm <span className="text-primary-color dark:text-primary-color-dark">Vincent</span>
-                , a fullstack software engineer who's trying to{' '}
+                Hi 👋 I'm{' '}
+                <span className="text-primary-color dark:text-primary-color-dark">Vincent</span>,
+                <br></br>let's{' '}
                 <span className="text-secondary-color dark:text-secondary-color-dark">
-                  make you better
+                  build better software
                 </span>{' '}
-                every day
+                together.
               </h1>
             </div>
             <div>
               <Image
                 src="/static/images/me.png"
                 alt="avatar"
-                width="384px"
-                height="384px"
+                width="200px"
+                height="200px"
                 className=" [clip-path:polygon(25%_0%,100%_0%,100%_100%,25%_100%,0%_50%)]"
               />
             </div>
           </div>
           <p className="text-lg leading-7 text-slate-600 dark:text-slate-300">
-            This is your place for{' '}
             <RoughNotation
               type="underline"
               show={true}
-              color="#FFFF66"
+              color="#61dafb"
               animationDelay={800}
               animationDuration={1200}
             >
-              App Architecture,{' '}
+              React,{' '}
             </RoughNotation>
             <RoughNotation
               type="underline"
               show={true}
-              color="#BDF2D5"
+              color="#84ba64"
               animationDelay={1400}
               animationDuration={1200}
             >
-              Testing,{' '}
+              Node,{' '}
             </RoughNotation>
             <RoughNotation
               type="underline"
               show={true}
-              color="#EB1D36"
+              color="#3178c6"
               animationDelay={1700}
               animationDuration={1200}
             >
-              UI/UX{' '}
+              Typescript{' '}
             </RoughNotation>
-            resources in React, Node and Flutter
+            and much more...
           </p>
           <div className="flex justify-center w-full">
             <div className="justify-center mt-2">

@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react'
 import { useKBar } from 'kbar'
+import { useEffect, useState } from 'react'
 
 export default function ShortcutHome() {
   const { query } = useKBar()
