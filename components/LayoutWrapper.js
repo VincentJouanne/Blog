@@ -1,13 +1,11 @@
-import { useState, useRef, useEffect } from 'react'
 import headerNavLinks from '@/data/headerNavLinks'
-import Link from './Link'
-import SectionContainer from './SectionContainer'
-import Footer from './Footer'
-import MobileNav from './MobileNav'
-import ThemeSwitch from './ThemeSwitch'
-import NowPlaying from './NowPlaying'
-import Typewriter from 'typewriter-effect'
 import { useRouter } from 'next/router'
+import Typewriter from 'typewriter-effect'
+import Footer from './Footer'
+import Link from './Link'
+import MobileNav from './MobileNav'
+import SectionContainer from './SectionContainer'
+import ThemeSwitch from './ThemeSwitch'
 
 const LayoutWrapper = ({ children }) => {
   const router = useRouter()
@@ -47,7 +45,6 @@ const LayoutWrapper = ({ children }) => {
           </div>
         </header>
         <main className="relative mb-auto">{children}</main>
-        <NowPlaying />
         <Footer />
       </div>
     </SectionContainer>
