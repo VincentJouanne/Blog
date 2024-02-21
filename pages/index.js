@@ -52,7 +52,7 @@ export default function Home({ posts }) {
               animationDelay={800}
               animationDuration={1200}
             >
-              React,{' '}
+              Flutter,{' '}
             </RoughNotation>
             <RoughNotation
               type="underline"
@@ -61,7 +61,7 @@ export default function Home({ posts }) {
               animationDelay={1400}
               animationDuration={1200}
             >
-              Node,{' '}
+              Tests,{' '}
             </RoughNotation>
             <RoughNotation
               type="underline"
@@ -70,7 +70,7 @@ export default function Home({ posts }) {
               animationDelay={1700}
               animationDuration={1200}
             >
-              Typescript{' '}
+              UI/UX{' '}
             </RoughNotation>
             and much more...
           </p>
